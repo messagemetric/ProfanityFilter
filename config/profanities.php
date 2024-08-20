@@ -330,7 +330,6 @@ return [
     'deggo',
     'dego',
     'devilworshipper',
-    'dick',
     'dickbag',
     'dickbeaters',
     'dickbrain',
