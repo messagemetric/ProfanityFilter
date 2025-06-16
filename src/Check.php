@@ -239,11 +239,11 @@ class Check
      */
     protected function generateProfanityExpression($word, $characterExpressions, $separatorExpression)
     {
-        $expression = '/\b' . preg_replace(
-                array_keys($characterExpressions),
-                array_values($characterExpressions),
-                $word
-            ) . '\b/iu';
+        $expression = '/(?<!\w)' . preg_replace(
+            array_keys($characterExpressions),
+            array_values($characterExpressions),
+            $word
+        ) . '(?!\w)/iu';
 
         return $expression;
     }
